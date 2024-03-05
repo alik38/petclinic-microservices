@@ -1,0 +1,2 @@
+Selenium uygulamayi calistirmak (docker-compose.yml) icin chrome driver guncel versionu indirmek gerekiyor!!
+driver'i windows a gore indirmek gerekiyor.
