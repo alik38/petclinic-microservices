@@ -59,6 +59,11 @@ pipeline {
                 sh '. ./jenkins/deploy_app_on_qa_environment.sh'
             }
         }
+         success {
+             script {
+             slackSend channel: '#class-chat', color: ' #439FE0', message: 'petclinic weekly pipeline passed succesfully', teamDomain: 'devops15tr', tokenCredentialId: 'jenkins-slack'
+                }
+         }
     }
     post {
         always {
